@@ -101,4 +101,27 @@ Aplicado en claude.ai el mismo día: 49 skills antiguas desactivadas (reversible
 
 **Seguridad:** todos los archivos copiados se escanearon (red, ejecución, ofuscación, inyección de instrucciones, caracteres invisibles). Hallazgos legítimos: snippets de GTM para el sitio propio, ejemplos `curl` a RSS públicos, scripts bash locales con git. Descartado a propósito: CLI/hooks/telemetría de caveman, hook de inicio de sesión de obra/superpowers, repos GPL-3.0 o PolyForm (token-optimizer, data-goblin, context-engineering-kit), oracle/skills (licencia UPL, pendiente de tu decisión), wrappers "*-automation" de Composio y registros ClawHub/skills.sh (Snyk encontró 13,4 % con problemas críticos). Tu youtube-full ya es la versión segura.
 
-**No hecho:** los módulos antiguos de marketing no se reemplazaron por las versiones v2 de Corey (cambió nombres y estructura; conviene hacerlo skill por skill). Las skills de LinkedIn de alirezarezvani (lint de posts, guardián de políticas) quedaron fuera.
+**No hecho en la fase 2** (resuelto en la fase 3): módulos antiguos de marketing. Las skills de LinkedIn de alirezarezvani (lint de posts, guardián de políticas) quedaron fuera.
+
+## Fase 3: marketing actualizado a Corey Haines v2.14.25 (2026-11-21)
+
+Los módulos antiguos eran Alireza Rezvani v1.0.0 (marzo 2026), casi todos derivados de la v1 de Corey. Ahora **45 de 57 módulos** vienen de Corey v2.14.25 (commit 5b2b400, 2026-11-19). Las 10 skills se subieron con "Subir nueva versión" (cada una guarda su historial).
+
+| Skill | Cambios |
+|---|---|
+| cro | page-cro + form-cro → `cro`; popup-cro → `popups`; signup-flow-cro → `signup`; onboarding-cro → `onboarding`; paywall-upgrade-cro → `paywalls` |
+| seo | seo-audit, schema, site-architecture, programmatic-seo, competitors, link-building (v2); aeo → `ai-seo` (Corey, con preparación para agentes); local-seo-manager se conserva |
+| redes-sociales | social-content y social-media-manager → `social`; + `community-marketing`; se conservan social-media-analyzer y x-twitter-growth |
+| copywriting | copywriting y copy-editing v2 (incluyen la lista de "AI tells") |
+| email-marketing | cold-email v2; email-sequence → `emails` |
+| anuncios | paid-ads → `ads`; ad-creative v2 (plantilla de revisión sin imágenes remotas) |
+| contenido | content-strategy v2; + `video` y `image` (producción con IA o código); se conservan content-production y video-content-strategist |
+| analitica-marketing | analytics-tracking → `analytics`; ab-test-setup → `ab-testing`; + `attribution`; se conserva campaign-analytics (scripts de ROI) |
+| estrategia-marketing | launch-strategy → `launch`; marketing-ideas y marketing-psychology v2; + `marketing-plan`, `customer-research`, `competitor-profiling`; se conservan pmm, demand-acquisition, business-name-fit, marketing-ops, ai-decision-authority |
+| growth-saas | pricing-strategy → `pricing`; churn-prevention v2; referral-program → `referrals`; free-tool-strategy → `free-tools`; app-store-optimization → `aso`; se conserva webinar-marketing |
+
+**Seguridad:** los módulos de Corey son solo texto (más carpetas `evals/` de pruebas que los routers mandan a ignorar). Algunas guías sugieren ejecutar `npx` (Remotion, Hyperframes, Playwright, is-agentic) o APIs con clave: los routers ahora exigen preguntar antes y revisar el paquete. Sin URLs remotas en plantillas, sin caracteres invisibles ni inyección de instrucciones.
+
+**Descartadas de Corey v2** por no aplicar a tus negocios: sales-enablement, revops, co-marketing, events, directory-submissions, marketing-council, reverse-engineer-marketing, product-marketing (lo cubre la skill marketing-context).
+
+**Verificación:** la sincronización local ya muestra solo tus 28 skills activas (más las 23 de Anthropic), sin las 49 desactivadas. claude.ai muestra cada skill de marketing en su nueva versión, por ejemplo "Cro v2 · actual" con 29 archivos.
