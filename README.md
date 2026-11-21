@@ -1,6 +1,6 @@
 # claude-skills-julio
 
-Respaldo privado de las skills de Claude de Julio, consolidadas el 2026-11-21: 62 skills sueltas pasaron a 24, y se sumaron las mejores skills públicas de GitHub (filtradas por licencia y escaneadas).
+Respaldo privado de las skills de Claude de Julio, consolidadas el 2026-11-21: 62 skills sueltas pasaron a 24, y después se ampliaron a 32 con las mejores skills públicas de GitHub (filtradas por licencia y escaneadas).
 
 Cada ZIP es una skill lista para subir en claude.ai → Personalizar → Plugins → Agregar → Subir plugin (o, si ya existe, ⋯ → Subir nueva versión con el mismo ZIP renombrado a `.skill`).
 
@@ -20,9 +20,13 @@ Cada ZIP es una skill lista para subir en claude.ai → Personalizar → Plugins
 | linkedin | Posts, conexiones y DM, comentarios, perfil | Propia (base aldushmedia, MIT) |
 | diseno-web | Inspiración de sistemas de diseño y revisión de interfaz | Propia (VoltAgent, Vercel) |
 | presupuestos-ffpp | Formularios de precios FF PP de subestaciones | Propia |
+| airflow-docker | DAGs de Airflow, Docker Compose, Dockerfiles, comandos peligrosos | astronomer/agents, docker/skills |
+| ot-ciberseguridad | IEC 62443, segmentación OT, ataques a SCADA, respuesta a incidentes | mukul975 (solo texto) |
+| freelance-propuestas | Propuestas, cotizaciones en COP, contratos y NDA | rondoflow, adaptada |
+| edicion-fotos | Comandos /studioquality, /cleanup, /upscale, /fondoblanco, /miniatura | Propia |
 | cro, seo, redes-sociales, copywriting, email-marketing, anuncios, contenido, analitica-marketing, estrategia-marketing, growth-saas | Marketing por dominio, cada una con sus módulos | coreyhaines31/marketingskills (v2.14.25) y alirezarezvani/claude-skills |
 
-Sin cambios y solo en claude.ai: oracle-scada-historian, disponibilidad-soe, power-automate-afinia, presentaciones-visuales, marketing-context, youtube-full.
+Mejoradas en la fase 4 (ZIP incluido): oracle-scada-historian (guías oficiales de Oracle) y power-automate-afinia (reglas de Microsoft). Sin cambios y solo en claude.ai: disponibilidad-soe, presentaciones-visuales, marketing-context, youtube-full.
 
 ## Diseño para ahorrar tokens
 

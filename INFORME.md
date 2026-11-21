@@ -125,3 +125,34 @@ Los módulos antiguos eran Alireza Rezvani v1.0.0 (marzo 2026), casi todos deriv
 **Descartadas de Corey v2** por no aplicar a tus negocios: sales-enablement, revops, co-marketing, events, directory-submissions, marketing-council, reverse-engineer-marketing, product-marketing (lo cubre la skill marketing-context).
 
 **Verificación:** la sincronización local ya muestra solo tus 28 skills activas (más las 23 de Anthropic), sin las 49 desactivadas. claude.ai muestra cada skill de marketing en su nueva versión, por ejemplo "Cro v2 · actual" con 29 archivos.
+
+## Fase 4: verificación de repositorios mundiales y mejoras aplicadas (2026-11-21)
+
+Detalle de la investigación en `VERIFICACION-REPOSITORIOS.md`.
+
+**Skills nuevas:**
+- **airflow-docker:** astronomer/agents y docker/skills, ambos Apache-2.0.
+- **ot-ciberseguridad:** mukul975, Apache-2.0. Solo el texto; los scripts se omitieron.
+- **freelance-propuestas:** rondoflow, MIT, adaptada a COP y Colombia.
+- **edicion-fotos:** propia. La idea viene de un reel de @academiaagentica; los comandos son /identitylock, /studioquality, /upscale, /cleanup, /fondoblanco, /lifestyle y /miniatura, sobre Higgsfield y Canva.
+
+**Skills mejoradas:**
+- **oracle-scada-historian v3:** suma las guías oficiales de Oracle (UPL-1.0) de rendimiento y PL/SQL, cada una marcada según si aplica o no a la 9i.
+- **power-automate-afinia v3:** suma las reglas de Microsoft para construir y depurar flujos (MIT).
+- **excel-datos v2:** suma tres módulos de Power BI: modelo, rendimiento y diseño (MIT).
+- **orquestador-skills v8:** mapa actualizado y skill-security-auditor (MIT) integrado en el protocolo de seguridad.
+
+**Plugins agregados**, todos revisados por Anthropic: session-report, security-guidance (en `settings.json` quedó `ENABLE_CODE_SECURITY_REVIEW=0` para conservar solo la capa de regex), claude-md-management, hookify y pyright-lsp.
+
+**Conectores:**
+- Agregados: Microsoft Learn y Context7.
+- Pendientes de que inicies sesión tú: Meta Ads (oficial, `https://mcp.facebook.com/ads`), TikTok for Business, vidIQ y Typefully.
+- TradingNote quedó desconectado; se puede volver a conectar.
+
+**Ajustes de Claude Code (`~/.claude/settings.json`)**, con respaldo en `settings.json.bak-20261121`:
+- `skillListingBudgetFraction` 0.02.
+- `skillOverrides` en `"name-only"` para 7 skills de poco uso.
+- `bashOutputMaxChars` en 15000.
+- `deniedMcpServers` bloquea 10 conectores sin autenticar o que fallan: BigQuery, Hex, Amplitude EU, Atlassian, Definite, Slack, Asana, PagerDuty, Datadog y el GitHub duplicado.
+
+**Pendiente de tu decisión:** otra sesión habilitó el plugin de terceros `cc-safety-net` (marketplace `kenryu42/cc-safety-net`, MIT). Tiene un hook PreToolUse que bloquea comandos destructivos. No está revisado por Anthropic ni por un socio.
