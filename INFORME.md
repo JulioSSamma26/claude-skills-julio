@@ -156,3 +156,21 @@ Detalle de la investigación en `VERIFICACION-REPOSITORIOS.md`.
 - `deniedMcpServers` bloquea 10 conectores sin autenticar o que fallan: BigQuery, Hex, Amplitude EU, Atlassian, Definite, Slack, Asana, PagerDuty, Datadog y el GitHub duplicado.
 
 **Pendiente de tu decisión:** otra sesión habilitó el plugin de terceros `cc-safety-net` (marketplace `kenryu42/cc-safety-net`, MIT). Tiene un hook PreToolUse que bloquea comandos destructivos. No está revisado por Anthropic ni por un socio.
+
+## Fase 5: fusiones desde ECC (2026-11-21)
+
+El análisis completo está en `ecc-fusion.md` (affaan-m/ECC v2.2.3, MIT, commit 4adeee6). **ECC no se instaló.** Se tomaron 9 ideas, reescritas en español y adaptadas al entorno de Julio, con referencia a la fuente en cada skill.
+
+| Skill (versión en claude.ai) | Qué se añadió |
+|---|---|
+| desarrollo-codigo v2 | Portón de hechos antes de editar un archivo (quién lo usa, qué cambia hacia fuera, esquema real de los datos, instrucción citada), una línea de vuelta atrás antes de comandos destructivos, línea "Destino: VERIFICADO / FALLÓ / NO REALIZADO / NO APLICA" y revisión rápida de Python |
+| ahorro-tokens v2 | Traspaso con callejones sin salida, lo no probado y el siguiente paso exacto; cuándo compactar y guardar el plan en un archivo antes de hacerlo |
+| superpowers v4 | Buscar antes de construir; línea de verificación en el destino |
+| orquestador-skills v9 | En el protocolo: versiones e imágenes sin fijar, `ANTHROPIC_BASE_URL`, `enableAllProjectMcpServers`, caracteres invisibles, contenido externo tratado como dato y auditoría trimestral de skills |
+| airflow-docker v2 | Seguridad de contenedores |
+| oracle-scada-historian v4 | Reglas de calidad SQL: bind, sin `SELECT *`, paginación por clave en 9i |
+| contenido v3, redes-sociales v4 | Antes de publicar un video: divulgación de contenido hecho con IA, promoción pagada y "contenido para niños" (COPPA) |
+
+**Pendiente, a confirmar con Julio:** las 3 reglas de hookify (bloquear SQL de escritura contra Oracle, credenciales escritas en el código y edición de configuraciones de linters) y las filas 7 a 19 de `ecc-fusion.md` que no se aplicaron.
+
+**Nota:** cc-safety-net bloqueó la primera escritura por un falso positivo (el texto mencionaba el nombre del archivo de variables de entorno). Se resolvió cambiando la redacción, sin desactivar el plugin.
