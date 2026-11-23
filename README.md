@@ -39,5 +39,6 @@ Todo el contenido de terceros es MIT o Apache-2.0. Cada módulo trae su `LICENSE
 ## Archivos
 
 - `zips/` — un ZIP por skill (estructura completa dentro).
+- `agentes/` — 4 subagentes globales con modelo fijo (Haiku, Sonnet, Opus, Fable) e instaladores; ver `agentes/README.md`.
 - `INFORME.md` — análisis, fusiones, seguridad y pasos aplicados.
 - `herramientas/` — scripts que generaron los paquetes.
