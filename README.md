@@ -4,6 +4,15 @@ Respaldo privado de las skills de Claude de Julio, consolidadas el 2026-11-21: 6
 
 Cada ZIP es una skill lista para subir en claude.ai → Personalizar → Plugins → Agregar → Subir plugin (o, si ya existe, ⋯ → Subir nueva versión con el mismo ZIP renombrado a `.skill`).
 
+## Equipo nuevo (Claude Code)
+
+Las skills se sincronizan solas desde la cuenta de claude.ai a todos los equipos y sesiones. Lo que es local de cada equipo (los 4 subagentes de `agentes/` y la regla de zona horaria de `CLAUDE.md`) se instala con un comando, que se puede repetir sin riesgo:
+
+- Windows: `git clone https://github.com/JulioSSamma26/claude-skills-julio.git` y luego `powershell -ExecutionPolicy Bypass -File .\claude-skills-julio\instalar-equipo.ps1`
+- macOS/Linux: `git clone https://github.com/JulioSSamma26/claude-skills-julio.git && bash claude-skills-julio/instalar-equipo.sh`
+
+Después, reiniciar Claude Code y revisar `/agents`.
+
 ## Skills
 
 | Skill | Qué hace | Origen |
