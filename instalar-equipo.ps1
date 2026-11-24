@@ -1,5 +1,5 @@
 # Deja un equipo Windows listo para Claude Code con la configuración de Julio:
-#   1) los 4 subagentes con modelo fijo en %USERPROFILE%\.claude\agents
+#   1) los 5 subagentes con modelo fijo (incluido Explore) en %USERPROFILE%\.claude\agents
 #   2) la regla de zona horaria al final de %USERPROFILE%\.claude\CLAUDE.md (solo si no está)
 # Las skills NO se instalan aquí: llegan solas a cada equipo desde la cuenta de claude.ai.
 # Uso, desde la raíz del repo:  powershell -ExecutionPolicy Bypass -File .\instalar-equipo.ps1

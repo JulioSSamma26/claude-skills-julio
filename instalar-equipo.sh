@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Deja un equipo macOS/Linux listo para Claude Code con la configuración de Julio:
-#   1) los 4 subagentes con modelo fijo en ~/.claude/agents
+#   1) los 5 subagentes con modelo fijo (incluido Explore) en ~/.claude/agents
 #   2) la regla de zona horaria al final de ~/.claude/CLAUDE.md (solo si no está)
 # Las skills NO se instalan aquí: llegan solas a cada equipo desde la cuenta de claude.ai.
 # Uso, desde la raíz del repo: bash instalar-equipo.sh   (se puede repetir sin riesgo)

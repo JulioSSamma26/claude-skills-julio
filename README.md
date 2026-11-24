@@ -6,7 +6,7 @@ Cada ZIP es una skill lista para subir en claude.ai → Personalizar → Plugins
 
 ## Equipo nuevo (Claude Code)
 
-Las skills se sincronizan solas desde la cuenta de claude.ai a todos los equipos y sesiones. Lo que es local de cada equipo (los 4 subagentes de `agentes/` y la regla de zona horaria de `CLAUDE.md`) se instala con un comando, que se puede repetir sin riesgo:
+Las skills se sincronizan solas desde la cuenta de claude.ai a todos los equipos y sesiones. Lo que es local de cada equipo (los 5 subagentes de `agentes/` y la regla de zona horaria de `CLAUDE.md`) se instala con un comando, que se puede repetir sin riesgo:
 
 - Windows: `git clone https://github.com/JulioSSamma26/claude-skills-julio.git` y luego `powershell -ExecutionPolicy Bypass -File .\claude-skills-julio\instalar-equipo.ps1`
 - macOS/Linux: `git clone https://github.com/JulioSSamma26/claude-skills-julio.git && bash claude-skills-julio/instalar-equipo.sh`
@@ -48,6 +48,6 @@ Todo el contenido de terceros es MIT o Apache-2.0. Cada módulo trae su `LICENSE
 ## Archivos
 
 - `zips/` — un ZIP por skill (estructura completa dentro).
-- `agentes/` — 4 subagentes globales con modelo fijo (Haiku, Sonnet, Opus, Fable) e instaladores; ver `agentes/README.md`.
+- `agentes/` — 5 subagentes globales con modelo fijo (Haiku, Sonnet, Opus, Fable, y Explore en Haiku) e instaladores; ver `agentes/README.md`.
 - `INFORME.md` — análisis, fusiones, seguridad y pasos aplicados.
 - `herramientas/` — scripts que generaron los paquetes.
